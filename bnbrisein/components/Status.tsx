@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { PROFILE_STATUS_CONTRACT_ADDRESS } from "@/constants/contracts";
 import {
   Web3Button,
@@ -18,6 +18,7 @@ const Status = (props: Props) => {
   const [status, setStatus] = useState("");
 
   const updateStatus = async () => {
+    await contract?.getAddress();
     if (!profileStatus.exists) {
       await contract?.call("createStatus", [status]);
       setStatus("");
@@ -71,14 +72,18 @@ const Status = (props: Props) => {
           </div>
           <div className="">
             <h3>
-              Status Exists: &nbsp;
-              <b>
-                {profileStatusIsLoading
-                  ? "Loading..."
-                  : profileStatus.exists
-                  ? "True"
-                  : "False"}
-              </b>
+              {!address ? (
+                "You need to connect"
+                ) : (
+                  <b>
+                  Status Exists: &nbsp;
+                  {profileStatusIsLoading
+                    ? "Loading..."
+                    : profileStatus.exists
+                    ? "True"
+                    : "False"}
+                </b>
+              )}
             </h3>
           </div>
         </div>
