@@ -25,7 +25,7 @@ contract ProfileStatus is ContractMetadata {
 
         userStatus[msg.sender] = Status({
             statusMessage: initialStatus,
-            exists: true,
+            exists: true
         });
 
         emit StatusCreated(msg.sender, initialStatus);

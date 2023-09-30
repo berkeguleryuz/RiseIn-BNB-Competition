@@ -19,6 +19,7 @@ const Status = (props: Props) => {
 
   const updateStatus = async () => {
     await contract?.getAddress();
+    await contract?.metadata;
     if (!profileStatus.exists) {
       await contract?.call("createStatus", [status]);
       setStatus("");
