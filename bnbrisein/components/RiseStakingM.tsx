@@ -1,6 +1,6 @@
+"use client"
 import {
   ERC20_RISEIN_CONTRACT_ADDRESS,
-  ERC721_RISEIN_CONTRACT_ADDRESS,
   STAKE_CONTRACT_ADDRESS,
 } from "@/constants/contracts";
 import {

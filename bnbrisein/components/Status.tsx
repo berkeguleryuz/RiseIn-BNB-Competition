@@ -1,3 +1,4 @@
+"use client"
 import { PROFILE_STATUS_CONTRACT_ADDRESS } from "@/constants/contracts";
 import {
   Web3Button,

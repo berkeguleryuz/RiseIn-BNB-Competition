@@ -1,3 +1,4 @@
+"use client"
 import { ERC20_RISEIN_CONTRACT_ADDRESS } from "@/constants/contracts";
 import {
   useAddress,

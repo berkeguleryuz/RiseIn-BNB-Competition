@@ -1,6 +1,6 @@
+"use client"
 import { ThirdwebNftMedia, useOwnedNFTs } from "@thirdweb-dev/react";
 import React from "react";
-import { NFT } from "@thirdweb-dev/sdk";
 import { Web3Button, useAddress, useContract } from "@thirdweb-dev/react";
 import {
   ERC721_RISEIN_CONTRACT_ADDRESS,
@@ -71,3 +71,4 @@ const RiseBalance = ( Props : NFTProps) => {
 };
 
 export default RiseBalance;
+
