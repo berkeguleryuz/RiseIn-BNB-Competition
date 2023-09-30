@@ -19,7 +19,7 @@ const RiseNFT = (props: Props) => {
   const { data: totalClaimed, isLoading: totalClaimedIsLoading } =
     useClaimedNFTSupply(contract);
   const { data: contractMetadata, isLoading: contractMetadataIsLoading } =
-    useContractMetadata(contract);
+    useContractMetadata(contract); 
   return (
     <div className="flex">
       <div className="rounded-xl text-center">
