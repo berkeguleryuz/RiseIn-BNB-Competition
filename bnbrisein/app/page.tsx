@@ -1,4 +1,5 @@
 "use client"
+import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Nav from "@/components/Nav";
 
@@ -13,6 +14,7 @@ export default function Home() {
         activeChain={activeChain}>
         <Nav />
         <HomePage />
+        <Footer />
       </ThirdwebProvider>
     </main>
   );
